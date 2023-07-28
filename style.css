@@ -2,3 +2,37 @@ body
 {
     font-family: 'Lato', sans-serif;
 }
+.gradient-overlay {
+    
+    background: linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+}
+.card-actions {
+    text-align: center;
+  }
+/* Styles for the dialog box */
+.dialog {
+    display: none;
+  }
+  
+  .dialog-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Style the summary to look like a button */
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  
+  summary {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  

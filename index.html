@@ -2,98 +2,300 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>telwind</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>telwind</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 
 <body>
-  <header class="px-7 py-6">
-    <div class="navbar bg-[#F85559] rounded-full h-8 w-auto">
-      <div class="navbar-start lg:flex hidden">
-        <ul class="menu menu-horizontal px-3 font-medium text-base text-white">
-          <li><a>Home</a></li>
-          <li><a>About Us</a></li>
-          <li><a>Shop</a></li>
-          <li><a>All Fruits</a></li>
-        </ul>
-      </div>
-      <div class="navbar-center sm:navbar-start gap-2">
-        <img class="w-7" src="./images/logo.png" alt="">
-        <a class="text-yellow-50 normal-case font-bold text-2xl ">Fruit Burst</a>
-      </div>
-      <div class="navbar-end sm:hidden">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </label>
-          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-            <li><a>Home</a></li>
-            <li><a>About Us</a></li>
-            <li><a>Shop</a></li>
-            <li><a>All Fruits</a></li>
-          </ul>
+    <header class="px-10 py-6">
+        <div class="navbar bg-[#F85559] rounded-full h-8 w-auto">
+            <div class="navbar-start lg:flex hidden">
+                <ul class="menu menu-horizontal px-3 font-medium text-base text-white">
+                    <li><a>Home</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Shop</a></li>
+                    <li><a>All Fruits</a></li>
+                </ul>
+            </div>
+            <div class="navbar-center sm:navbar-start gap-2">
+                <img class="w-7" src="./images/logo.png" alt="">
+                <a class="text-yellow-50 normal-case font-bold text-2xl ">Fruit Burst</a>
+            </div>
+            <div class="navbar-end sm:hidden">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
 
-        </div>
-        </div>
-     
-        <div class="navbar-end hidden lg:flex relative pr-5">
-          <input type="text" placeholder="Search here" class="input input-bordered h-9 w-80 text-black pr-10 rounded-full ">
-          <i class="pr-5 fas fa-search absolute text-black right-3 top-1/2 transform -translate-y-1/2 text-lg"></i>
-        </div>
- 
-      
+                </div>
+            </div>
 
-      
-
-
-</div>
+            <div class="navbar-end hidden lg:flex relative pr-5">
+                <input type="text" placeholder="Search here"
+                    class="input input-bordered h-9 w-80 text-black pr-10 rounded-full ">
+                <i
+                    class="pr-5 fas fa-search absolute text-black right-3 top-1/2 transform -translate-y-1/2 text-lg"></i>
+            </div>
 
 
-  </header>
-  <main>
-    <div class="carousel w-full">
-      <div id="slide1" class="carousel-item relative w-full">
-        <img src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide4" class="btn btn-circle">❮</a>
-          <a href="#slide2" class="btn btn-circle">❯</a>
+
+
+
+
         </div>
-      </div>
-      <div id="slide2" class="carousel-item relative w-full">
-        <img src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide1" class="btn btn-circle">❮</a>
-          <a href="#slide3" class="btn btn-circle">❯</a>
+
+
+    </header>
+    <main>
+        <section class=" banner px-10 relative z-10">
+            <div class="">
+            <div class="carousel w-full  ">
+                <div id="slide1" class="relative carousel-item w-full">
+                    <img src="./images/banner1.png" class=" w-full" />
+                    <div class= "absolute w-full h-full line gradient-overlay  text-center text-white">
+                        <h1 class="lg:mt-24 mt-4 lg:mb-6 mb-0 lg:text-5xl text-2xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="lg:mt-6 mt-0 lg:mb-4 mb-2  font-medium lg:text-base text-sm">We supply highly quality organic products</p>
+                        <button class="btn btn-outline bg-[#F85559] text-white lg:px-8 lg:text-base text-sm font-extrabold border-solid border-transparent">Shop Now</button>
+                    </div>
+          
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle bg-slate-950 hover:bg-slate-950 text-white">❮</a>
+                        <a href="#slide2" class="btn btn-circle bg-slate-950 hover:bg-slate-950 text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="relative carousel-item w-full">
+                    <img src="./images/banner2.png" class=" w-full" />
+                    <div class= "absolute w-full h-full line gradient-overlay  text-center text-white">
+                        <h1 class="lg:mt-24 mt-4 lg:mb-6 mb-0 lg:text-5xl text-2xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="lg:mt-6 mt-0 lg:mb-4 mb-2  font-medium lg:text-base text-sm ">We supply highly quality organic products</p>
+                        <button class=" btn btn-outline bg-[#F85559] text-white lg:px-8 lg:text-base text-sm font-extrabold border-solid border-transparent">Shop Now</button>
+                    </div>
+                
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle bg-slate-950 hover:bg-slate-950 text-white">❮</a>
+                        <a href="#slide3" class="btn btn-circle bg-slate-950 hover:bg-slate-950 text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="relative carousel-item w-full">
+                    <img src="./images/banner3.png" class=" w-full" />
+                    <div class= " absolute w-full h-full line gradient-overlay  text-center text-white">
+                        <h1 class="lg:mt-24 mt-4 lg:mb-6 mb-0 lg:text-5xl text-2xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="lg:mt-6 mt-0 lg:mb-4 mb-2  font-medium lg:text-base text-sm ">We supply highly quality organic products</p>
+                        <button class="btn btn-outline bg-[#F85559] text-white lg:px-8 lg:text-base text-sm font-extrabold border-solid border-transparent">Shop Now</button>
+                    </div>
+                
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle bg-slate-950 hover:bg-slate-950 text-white">❮</a>
+                        <a href="#slide4" class="btn btn-circle bg-slate-950 hover:bg-slate-950 text-white">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="relative carousel-item w-full h-full">
+                    <img src="./images/banner4.png" class=" w-full" />
+                    <div class= "absolute w-full h-full line gradient-overlay  text-center text-white">
+                        <h1 class="lg:mt-24 mt-4 lg:mb-6 mb-0 lg:text-5xl text-2xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
+                        <p class="lg:mt-6 mt-0 lg:mb-4 mb-2  font-medium lg:text-base text-sm">We supply highly quality organic products</p>
+                        <button class="btn btn-outline bg-[#F85559] text-white lg:px-8 lg:text-base text-sm font-extrabold border-solid border-transparent">Shop Now</button>
+                    </div>
+                
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle bg-slate-950 hover:bg-slate-950 text-white">❮</a>
+                        <a href="#slide1" class="btn btn-circle bg-slate-950 hover:bg-slate-950 text-white">❯</a>
+                    </div>
+                </div>
+            </div>
+             
+            <!-- <div class= "  ml-72 pl-28 absolute text-center text-white mt-[-460px]">
+                <h1 class="text-5xl font-extrabold mb-5 opacity-100">Exotic tastes at your <br> doorstep</h1>
+                <p class="font-medium text-base mb-5 opacity-100">We supply highly quality organic products</p>
+                <button class="btn btn-error bg-[#F85559] opacity-100">Error</button>
+            </div> -->
+       
+
+            <div class="bg-white lg:flex hidden justify-center gap-10 relative ml-36 p-6 mt-[-80px] w-9/12 rounded-lg">
+                <div class="overlap w-30"><img src="./images/fruit1.png" alt="" class="fimage"><a href=""></a></div>
+                <div class="overlap w-30"><img src="./images/fruit2.png" alt="" class="fimage"><a href=""></a></div>
+                <div class="overlap w-30"><img src="./images/fruit3.png" alt="" class="fimage"><a href=""></a></div>
+                <div class="overlap w-30"><img src="./images/fruit4.png" alt="" class="fimage"><a href=""></a></div>
+                <div class="overlap w-30"><img src="./images/fruit5.png" alt="" class="fimage"><a href=""></a></div>
+            </div>
+
         </div>
-      </div>
-      <div id="slide3" class="carousel-item relative w-full">
-        <img src="/images/stock/photo-1414694762283-acccc27bca85.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide2" class="btn btn-circle">❮</a>
-          <a href="#slide4" class="btn btn-circle">❯</a>
-        </div>
-      </div>
-      <div id="slide4" class="carousel-item relative w-full">
-        <img src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg" class="w-full" />
-        <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-          <a href="#slide3" class="btn btn-circle">❮</a>
-          <a href="#slide1" class="btn btn-circle">❯</a>
-        </div>
-      </div>
+        </section>
+
+
+        <section class="deal px-10 py-6 relative z-0 mt-10 ">
+            <div class="flex justify-between lg:flex-row flex-col ">
+                <div class="ml-10">
+                    <h1 class="text-5xl font-extrabold mb-3">Deal of the day</h1>
+                    <p class="font-medium font-sm">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+               
+                    <div class="mr-10 lg:ml-0 ml-10 lg:py-0 py-5 grid grid-flow-col gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:29; ">
+                                
+                    </span><i class="fa-solid fa-ellipsis-vertical text-2xl mt-2 ml-5"></i>
+                          </span>
+                          Days
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:15;"></span><i class="fa-solid fa-ellipsis-vertical text-2xl mt-2 ml-5"></i>
+                          </span>
+                          Hours
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:25;"></span><i class="fa-solid fa-ellipsis-vertical text-2xl mt-2 ml-5"></i>
+                          </span>
+                          Minutes
+                        </div> 
+                        <div class="flex flex-col">
+                          <span class="countdown font-mono text-5xl font-extrabold">
+                            <span style="--value:08;"></span>
+                          </span>
+                          Seconds
+                        </div>
+                      </div>
+                </div>
+        
+
+        </section>
+        <section class="deal px-10 py-6 relative z-0 mt-10 lg:flex gap-3 ">
+            <div class="card w-96 bg-base-100 shadow-xl">
+                <figure><img src="./images/fruit6.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+            
+                  <h2 class="text-center font-bold">12.90$ - 18.85$</h2>
+                  <h6 class="text-center text-xs mt-5">Apples</h6>
+                 
+                  <div class="w-24 rating rating-lg rating-half lg:ml-12 ml-28 ">
+                    <input type="radio" name="rating-1" class="rating-hidden" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-1" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  </div>
+                  
+                  <div class="card-actions flex justify-center">
+                    <button class="btn bg-transparent  text-[#F85559]">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-96 bg-base-100 shadow-xl text-center">
+                <figure><img src="./images/fruit7.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+            
+                  <h2 class="text-center font-bold">12.90$ - 18.85$</h2>
+                  <h6 class="text-center text-xs mt-4">Orange</h6>
+                 
+                  <div class="lg:ml-16 ml-28 w-24 rating rating-lg rating-half flex justify-center">
+                    <input type="radio" name="rating-2" class="rating-hidden" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1"  />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-2" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  </div>
+                  <div class="card-actions flex justify-center">
+                    <button class="btn bg-transparent  text-[#F85559]">Buy Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-96 bg-base-100 shadow-xl text-center">
+                <figure><img src="./images/fruit8.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+            
+                  <h2 class="text-center font-bold">12.90$ - 18.85$</h2>
+                  <h6 class="text-center text-xs mt-5">Red Dragon</h6>
+                 
+                
+                    <div class="w-24 lg:ml-16 ml-28 rating rating-lg rating-half flex justify-center ">
+                        <input type="radio" name="rating-3" class="rating-hidden" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-3" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                      </div>
+                  <div class="card-actions flex justify-center">
+                    <button class="btn bg-transparent  text-[#F85559]">Buy Now</button>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card w-96 bg-base-100 shadow-xl text-center">
+                <figure><img src="./images/fruit9.png" alt="Shoes" /></figure>
+                <div class="card-body text-center">
+            
+                  <h2 class="text-center font-bold">12.90$ - 18.85$</h2>
+                  <h6 class="text-center text-xs mt-5">Banana</h6>
+                 
+                  <div class="w-24 lg:ml-16 ml-28 rating rating-lg rating-half flex justify-center">
+                    <input type="radio" name="rating-4" class="rating-hidden" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1 h-2 w-4" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1"  />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-1" />
+                    <input type="radio" name="rating-4" class="bg-[#F85559] mask mask-star-2 mask-half-2" />
+                  </div>
+                  <div class="card-actions flex justify-center">
+                    <button class="btn bg-transparent  text-[#F85559]">Details</button>
+                  </div>
+                </div>
+              </div>
+              
+
+        </section>
+        <div class="flex justify-center">
+        <div class="btn bg-[#F85559] font-bold text-base text-white hover:bg-[#e04d4f] w-36"> Shop All</div>
     </div>
-  </main>
+    </main>
 </body>
 
 </html>
